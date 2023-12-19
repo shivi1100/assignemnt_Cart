@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Jost',sans-serif;
+    min-height: 100vh;
+}
+header{
+    padding: 2px 0px;
+    position: relative;
+    transform: translate(94px, -3px);    
+}
+h4{
+    overflow: hidden;
+    text-align: center;
+    color: green;
+    font-weight: 100;
+}
+h4::before,
+h4::after {
+  background-color: #c9d8c6;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h4::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h4::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+.form-input{
+    border: 2px solid rgb(131, 138, 131);
+    padding: 15px 20px;
+    margin: 20px;
+    width: 190%;
+    border-radius: 4px;    
+}
+
+.form-input:hover{
+    background-color: rgb(177, 223, 177);
+    border: 1px solid rgb(40, 156, 40);
+    cursor: context-menu;
+}
+.detail{
+    position: relative;
+    bottom: 25px;
+    left: 15px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 12px;
+}
+.discount{
+    position:absolute;
+    transform: translate(276px, -55px);
+    font-weight: bold;
+}
+#Popular{
+    position: absolute;
+    transform: translate(259px, -75px);
+    color: green;
+    font-weight: bold;
+    font-size: 15px;
+}
+strike{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: grey;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+table th{
+    font-weight: lighter;
+    font-size: 10px;
+}
+.size1{
+    font-size: 10px;
+}
+.size2{
+    font-size: 10px;
+}
+footer{
+    position: relative;
+    left: 19px;
+    top: 2px;
+}
+p#p1{
+    color: rgb(38, 225, 110);
+}
+p#p2{
+    position: relative;
+    left: 250px;
+    bottom: 23px;
+    font-weight: bold;
+}
+button.btn{
+  display: block;
+  position: relative;
+  left: 14px;
+  width: 188%;
+  border: 2px solid rgb(217, 209, 209);
+  line-height: 38px;
+  border-radius: 4px;
+  background: rgb(52, 145, 98);
+  font-size: 20px;
+  color: #ffff;
+}
