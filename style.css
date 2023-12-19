@@ -42,7 +42,7 @@ h4::after {
     border: 2px solid rgb(131, 138, 131);
     padding: 15px 20px;
     margin: 20px;
-    width: 190%;
+    width: 203%;
     border-radius: 4px;    
 }
 
@@ -104,7 +104,7 @@ p#p1{
 }
 p#p2{
     position: relative;
-    left: 250px;
+    left: 275px;
     bottom: 23px;
     font-weight: bold;
 }
@@ -112,7 +112,7 @@ button.btn{
   display: block;
   position: relative;
   left: 14px;
-  width: 188%;
+  width: 207%;
   border: 2px solid rgb(217, 209, 209);
   line-height: 38px;
   border-radius: 4px;

@@ -19,7 +19,7 @@
                 <div class="detail" id="title1">1 Pair</div>
                 <div class="detail" id="price">DKK 195.00</div>
                 <div class="discount">50% OFF</div>
-                <table class="pairOne" hidden>
+                <table id="pairOne" hidden>
                   <tr>
                     <th>Size</th>
                     <th>Color</th>
@@ -53,7 +53,7 @@
             </label>
           </div>
           <div class="form-input">
-            <input type="radio" name="box" id="box2" value="Two" checked />
+            <input type="radio" name="box" id="box2" onclick="toggleOne()" value="Two" checked />
             <label for="Two">
               <div>
                 <div class="detail" id ="title">2 Pair</div>
@@ -61,7 +61,7 @@
                 <strike>DKK 195.00</strike>
                 <span id="Popular">Most Popular</span>
                 <div class="discount">40% OFF</div>
-                <table id="pairTwo">
+                <table class="pairThree">
                   <tr>
                     <th>Size</th>
                     <th>Color</th>
@@ -95,13 +95,13 @@
             </label>
           </div>
           <div class="form-input">
-            <input type="radio" name="box" id="box3" value="Three" />
+            <input type="radio" name="box" id="box3" onclick="toggleTwo()" value="Three" />
             <label for="Three">
               <div>
                 <div class="detail" id="title">3 Pair</div>
                 <div class="detail" id="price">DKK 528.00</div>
                 <div class="discount">60% OFF</div>
-                <table id="pairThree" hidden>
+                <table class="pairTwo" hidden>
                   <tr>
                     <th>Size</th>
                     <th>Color</th>
