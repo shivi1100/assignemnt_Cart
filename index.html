@@ -4,22 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <script src="cart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Lato:ital@1&family=Noto+Sans&family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
   </head>
   <body>
       <div class="container">
-        <div class="form">
-         <header><h4>Bundel & Save</h4></header>
-          <div class="form-input">   
-            <input type="radio" onclick="toggle()" name="box" id="box1" value="hide" />
-            <label for="One">
+        <h2>YAY! It's BOGO</h2>
+          <div class="form-input" onclick="toggleOne()">   
+               <input type="radio" class="input-box" name="box" value="hide"/>
+               <div>
+                <div class="detail" id="title1">1 Unit
+                  <div id="standard">Standard Price</div>
+                 </div>
+                  <div class="price">$10.00 USD
+                    <strike>$24.00 USD</strike>
+                  </div>
+                  <div class="box" id="discount">10% Off</div>
+                  <table id="pairOne" hidden>
+                    <tr>
+                      <th>Size</th>
+                      <th>Color</th>
+                    </tr>
+                    <tr>
+                      <td class="size1"> #1
+                        <select class="select-box">
+                          <option value="s">S</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select class="select-box">
+                          <option value="s">Colour</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="size2"> #2
+                        <select class="select-box">
+                          <option value="s">S</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select class="select-box">
+                          <option value="s">Colour</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+               
+          <div class="form-input" onclick="toggleTwo()">
+            <label class="radio">
+              <input type="radio" class="input-box" name="box"  value="Two" checked />
+            </label>
               <div>
-                <div class="detail" id="title1">1 Pair</div>
-                <div class="detail" id="price">DKK 195.00</div>
-                <div class="discount">50% OFF</div>
-                <table id="pairOne" hidden>
+                <div class="detail" id ="title">2 Unit</div>
+                <div class="price">$18.00 USD
+                  <strike>$24.00 USD</strike>
+                </div>
+                <div class="block">
+                  <div id="Popular">Most Popular</div>
+                </div>
+                <div class="box" id="discount">20% Off</div>
+                <table class="pairTwo">
                   <tr>
                     <th>Size</th>
                     <th>Color</th>
@@ -50,18 +98,18 @@
                   </tr>
                 </table>
               </div>
-            </label>
           </div>
-          <div class="form-input">
-            <input type="radio" name="box" id="box2" onclick="toggleOne()" value="Two" checked />
-            <label for="Two">
+          <div class="form-input" onclick="toggleThree()">
+            <label class="radio">
+              <input type="radio" class="input-box" name="box" value="Three" />
+            </label>
               <div>
-                <div class="detail" id ="title">2 Pair</div>
-                <div class="detail" id="price">DKK 345.00</div>
+                <div class="detail" id="title">3 Unit</div>
+                <div class="price">$24.00 USD
                 <strike>DKK 195.00</strike>
-                <span id="Popular">Most Popular</span>
-                <div class="discount">40% OFF</div>
-                <table class="pairThree">
+                </div>
+                <div class="box" id="discount">30% Off</div>
+                <table class="pairThree" hidden>
                   <tr>
                     <th>Size</th>
                     <th>Color</th>
@@ -92,54 +140,11 @@
                   </tr>
                 </table>
               </div>
-            </label>
           </div>
-          <div class="form-input">
-            <input type="radio" name="box" id="box3" onclick="toggleTwo()" value="Three" />
-            <label for="Three">
-              <div>
-                <div class="detail" id="title">3 Pair</div>
-                <div class="detail" id="price">DKK 528.00</div>
-                <div class="discount">60% OFF</div>
-                <table class="pairTwo" hidden>
-                  <tr>
-                    <th>Size</th>
-                    <th>Color</th>
-                  </tr>
-                  <tr>
-                    <td class="size1"> #1
-                      <select class="select-box">
-                        <option value="s">S</option>
-                      </select>
-                    </td>
-                    <td>
-                      <select class="select-box">
-                        <option value="s">Colour</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="size2"> #2
-                      <select class="select-box">
-                        <option value="s">S</option>
-                      </select>
-                    </td>
-                    <td>
-                      <select class="select-box">
-                        <option value="s">Colour</option>
-                      </select>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </label>
-          </div>
-          <footer>
-            <p id="p1">Free 2 day shipping</p> 
-            <p id="p2">Total: DKK 360.00 </p>
-          </footer> 
+            <p id="p1">Free Delivery</p> 
+            <p id="p2">Total: $18.00 USD</p>
           <button class="btn">+ Add to Cart</button>
         </div>       
-      </div>    
+      </div>   
   </body>
 </html>

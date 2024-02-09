@@ -1,4 +1,4 @@
-function toggle(){
+function toggleOne(){
     const card = document.querySelector('table');
     if(card.style.display === "none") {
         card.style.display = "block";
@@ -18,7 +18,7 @@ function toggleTwo(){
     }
 }
 
-function toggleOne(){
+function toggleThree(){
     const cardTwo = document.querySelector('table.pairThree')
     if(cardTwo.style.display === "none") {
         cardTwo.style.display = "block";

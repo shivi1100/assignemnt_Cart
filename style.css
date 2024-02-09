@@ -1,75 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
-body{
-    font-family:'Jost',sans-serif;
-    min-height: 100vh;
-}
-header{
-    padding: 2px 0px;
-    position: relative;
-    transform: translate(94px, -3px);    
-}
-h4{
-    overflow: hidden;
+.container{
+    width: 90%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 0px 35px;
     text-align: center;
-    color: green;
-    font-weight: 100;
 }
-h4::before,
-h4::after {
+ .container h2{
+    width: 343px;
+    height: 24px;
+    top: 39px;
+    left: 59px;
+    border: 0.9px;
+    color:#FF6B82;
+    font-size:20px;
+    font-weight:600;
+}
+.container.card{
+    width: 90%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.input-box{
+    transform:translate(-158px, 12px);
+    margin:6px;
+}
+h2::before,
+h2::after {
   background-color: #c9d8c6;
   content: "";
   display: inline-block;
   height: 1px;
   position: relative;
   vertical-align: middle;
-  width: 50%;
+  width: 24%;
 }
 
-h4::before {
+h2::before{
   right: 0.5em;
-  margin-left: -50%;
+  margin-left: -30%;
 }
-h4::after {
+h2::after {
     left: 0.5em;
-    margin-right: -50%;
+    margin-right: -40%;
   }
 
 .form-input{
     border: 2px solid rgb(131, 138, 131);
     padding: 15px 20px;
     margin: 20px;
-    width: 203%;
-    border-radius: 4px;    
+    width: 341px;
+    height:363.11px
+    top:82px;
+    left:59px;
+    border-radius: 4px;
 }
 
 .form-input:hover{
-    background-color: rgb(177, 223, 177);
-    border: 1px solid rgb(40, 156, 40);
+    background-color: #FFF9FA;
+    border: 2px solid #FF6B82;
     cursor: context-menu;
 }
 .detail{
-    position: relative;
-    bottom: 25px;
-    left: 15px;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 0px 12px;
+    transform:translate(-1px, -10px);
+    width:56px;
+    height:17px;
+    top:101.88px;
+    left:108.23px;
+    font-weight:600;
+    font-size:14px;
+    line-height:16.94px;
 }
-.discount{
-    position:absolute;
-    transform: translate(276px, -55px);
-    font-weight: bold;
+ #standard{
+    width:100px;
+    height:15px;
+    font-weight:400;
+    font-size:12px;
+    line-height:14.52px;
 }
-#Popular{
-    position: absolute;
-    transform: translate(259px, -75px);
-    color: green;
-    font-weight: bold;
-    font-size: 15px;
+.box{
+    width:55px
+    height:17px;
+    top:103px;
+    left:157px;
+    border-radius:1px solid black;
+    Width:55px;
+    background:#FF6B82;
+}
+#discount{
+    transform: translate(57px,-50px);
+    height:15px;
+    font-weight:400;
+    font-size:12px;
+    line-height:14.52px;
+    text-align:center;
+    color:#fff;
+}
+.block{
+    height:35px;
+    max-width:122px;
+    border-radius: 0px 0px 4px 4px;
+    background-color:#FF6B82;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:translate(191px, -91px);
+}
+.block #Popular{
+    color: #fff;
+    font-weight: 700;
+    font-size:12px; 
+    max-width:122px;
+}
+.price{
+    height:18px;
+    font-weight:500;
+    font-size:14.46px;
+    line-height:17.5px;
+    transform:translate(107px, -28px);
 }
 strike{
     display: flex;
@@ -77,12 +135,6 @@ strike{
     justify-content: center;
     font-size: 10px;
     color: grey;
-}
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
 }
 table th{
     font-weight: lighter;
@@ -94,29 +146,40 @@ table th{
 .size2{
     font-size: 10px;
 }
-footer{
-    position: relative;
-    left: 19px;
-    top: 2px;
-}
 p#p1{
-    color: rgb(38, 225, 110);
+    font-family:Inter;
+    font-weight:500;
+    font-size:14px;
+    line-height:16.94px;
+    width:132px;
+    height:17px;
+    color: #FF6B82;
 }
 p#p2{
+    font-family:Inter;
+    font-weight:500;
+    font-size:14px;
+    line-height:16.94px;
+    height:17px;
     position: relative;
-    left: 275px;
-    bottom: 23px;
-    font-weight: bold;
+    left: 103px;
+    bottom: 17px;
+    display:block
 }
 button.btn{
-  display: block;
-  position: relative;
-  left: 14px;
-  width: 207%;
-  border: 2px solid rgb(217, 209, 209);
-  line-height: 38px;
-  border-radius: 4px;
-  background: rgb(52, 145, 98);
-  font-size: 20px;
-  color: #ffff;
+    Width:342px;
+    height:40px;
+    top:497px;
+    left:58px;
+    border-radius:4px;
+    padding:10px;
+    margin:8px;
+    background:#FF6B82;
+    color:#fff;
+    font-size:12px;
+    line-height:14.52px;
+}
+.radio input[type="radio"]{
+    font-size:50px;
+    color:#FF6B82
 }
